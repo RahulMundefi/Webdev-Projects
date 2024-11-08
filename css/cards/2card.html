@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background-color: #8BC6EC;
+            background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+         }
+         .box{
+            height: 570px;
+            width: 360px;
+            background-color:white;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+
+        }
+        .box img{
+            width: 100%;
+            height: 30%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+       .textbox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        width: 70%;
+        text-align: center;
+       }
+       
+       .amountbox{
+        height: 10%;
+        width: 80%;
+        background-color: #8bc5ec8b;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+       }
+
+       .leftbox{
+        width: fit-content;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+       }
+       
+       #imgbox img{
+        width:3.5rem;
+        height: 3.5rem;
+       }
+       
+       
+       #payment{
+        height: 9%;
+        width: 80%;
+        background-color: rgb(22,22,79);
+        color: white;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+       }
+     
+       .cancelbox a{
+        text-decoration: none;
+        color: rgb(58, 54, 54);
+        font-weight: bold;
+        font-size: large;
+       }
+
+     </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+           <img src="icon.jpg">
+           
+           <div class="textbox">
+               <h2>Order Summary</h2>
+               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione voluptatibus voluptatem quos, quod cum perferendis!</p>
+           </div>
+           
+           <div class="amountbox">
+              <div class="leftbox">
+                    <div id="imgbox" >
+                      <img src="music.png">
+                    </div>
+                    <div id="textamountbox">
+                       <p>Amount</p>
+                       <p>$99.99/year</p>
+                    </div>
+              </div>
+
+              <div class"rigthbox">
+                <a href="#">Change</a>
+            </div>
+             
+            </div>
+             <button id="payment">
+                Proceed to pay
+             </button>   
+              <div class="cancelbox">
+                <a href="#">Cancel Button</a>
+              </div>
+             
+        </div>
+
+    </div>
+</body>
+</html>

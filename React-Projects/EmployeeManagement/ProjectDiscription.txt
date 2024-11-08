@@ -1,0 +1,15 @@
+  Employee Management Project 
+           
+            ↓
+           
+  3 main components are Login Page( src → Auth → Login.jsx) , AdminDashboard and EmployeeDashboard (src→Dashboard→AdminDashboard.jsx,EmployeeDashboard.jsx)  
+
+  
+  
+  Now for EmployeeDashboard we have three components 
+..  Header(src→components→others→Header.jsx) which shows name of Employee who's id is logged in.
+.. TaskList Numbers (src→components→others→TaskListTemp.jsx) which shows Numbers of task completed ,failed ,accepted ,newtask by  logged in user .
+..  Then at bttom we have TaskList which shows the name of each task and describe the task accepted,failed,completed,or a newtask for the user .IN Tasklist we use 4 components for the Accept Task , New Task,Completed Task,Failed Task (src→components→TaskList)
+
+
+We have Utils folder which contains localstorage.jsx file which contains all the data about Employee and Admin , and also it sends data to local storage so it can be used by other components from local storage .

@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: aliceblue;
+
+}
+
+.btn{
+    background-color: pink;
+    padding: 20px 40px;
+    box-shadow: 0 4px 8px rgba(0, 0,0, 0.3);
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    overflow: hidden;
+    position: relative;
+}
+
+.btn::before{
+    content: "";
+    position:absolute;
+    background-color: orangered;
+    /*width: 20px;
+    height: 20px;*/
+    width: 0;   /*issay yae color ka elemetn dikayga nahi par exist karyga*/
+    height: 0;
+    left: var(--xpos); /*to use in js we will assign value through variable(before is not part of  dom)*/
+    top: var(--ypos);
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    transition: width 0.5s,height 0.5s ;
+}
+
+.btn:hover::before{
+    
+    width: 300px;
+    height: 300px;
+    
+
+}
+
+
+.btn span{
+    position: relative;  /*yae islyae hai taki jab color expand ho tou upar buttob likha aye or uskay under color expand ho*/ 
+    z-index: 1;
+}
+
+
